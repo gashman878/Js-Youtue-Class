@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="index.js"></script>
+    <title>GAMES</title>
 </head>
 <body>
+    <h1>Rock, Paper, Scissors Game</h1>
+    <button type="button" onclick="playGame('Rock')">Rock</button>
+    <button type="button" onclick="playGame('Paper')">Paper</button>
+    <button type="button" onclick="playGame('Scissors')">Scissors</button>
+    <p id="please" style="display: block;">Computer Picks Paper, Tie</p>
+
+
+    <h3>Scores</h3>
+    <h4>
+        Won: <span id="won">0</span> <br>
+        Lost: <span id="lost">0</span> <br>
+        Tie: <span id="tie">0</span>
+    </h4>
+    <button onclick="reset()">Reset</button>
+
+
+
     
+    <hr>
+    <h1>Let's Shop</h1>
+    <button onclick="addCart()">Add to Cart</button>
+    <button onclick="plus2()">+2</button>
+    <button onclick="plus3()">+3</button>
+    <button onclick="resetCart()">Reset Cart</button>
+    <p id="cartItem"></p>
 </body>
 </html>
