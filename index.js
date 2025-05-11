@@ -8,6 +8,7 @@ if (score === null){
     };
 }
 
+
 function pickComputerMove() {
     const random = Math.random();
     if (random <= 1/3){
@@ -19,6 +20,7 @@ function pickComputerMove() {
     }
     return computerMove;
 }
+
 
 function playGame(playerMove) {
     const computerMove = pickComputerMove();
@@ -81,26 +83,6 @@ function reset() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // FOR THE CART
 let cartItem = 0;
 function addCart() {
@@ -118,4 +100,16 @@ function plus3() {
 function resetCart() {
     cartItem = 0;
     document.getElementById('cartItem').innerHTML = "Your cart has been reset to " + cartItem + " items";
+}
+
+
+
+// FOR SUBSCRIBE BUTTON
+function subscribe() {
+    let text = document.querySelector('.buttonText');
+    if (text.innerHTML === 'Subscribe') {
+        text.innerHTML = 'Subscribed';
+    } else {
+        text.innerHTML = 'Subscribe';
+    }
 }
