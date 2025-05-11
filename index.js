@@ -113,3 +113,14 @@ function subscribe() {
         text.innerHTML = 'Subscribe';
     }
 }
+
+// FOR AMAZON
+function calculateTotal() {
+    let priceInput = document.querySelector('.priceInput');
+    let cost = Number(priceInput.value);
+
+    if (cost < 40) {
+        cost = cost + 10;
+    }
+    document.querySelector('.totalCost').innerHTML = "$"+cost;
+}
