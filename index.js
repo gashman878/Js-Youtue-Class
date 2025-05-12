@@ -116,11 +116,16 @@ function subscribe() {
 
 // FOR AMAZON
 function calculateTotal() {
-    let priceInput = document.querySelector('.priceInput');
-    let cost = Number(priceInput.value);
-
+    const inputElement = document.querySelector('.js-cost-input');
+    let cost = Number(inputElement.value);
     if (cost < 40) {
         cost = cost + 10;
     }
-    document.querySelector('.totalCost').innerHTML = "$"+cost;
+
+    document.querySelector('.totalCost').innerHTML = "$" + cost;
+}
+function calculateT(event) {
+    if (event.key === 'Enter') {
+        calculateTotal();
+    }
 }
